@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_style"
+    tools:context=".LoginActivity">
+
+    <View
+        android:id="@+id/login_area"
+        style="@style/containerView_style"
+        android:layout_height="280dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_style"
+        android:text="Login:"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/login_area"/>
+
+    <EditText
+        android:id="@+id/user"
+        style="@style/editText_style"
+        android:layout_below="@+id/title"
+        android:hint="Usuário"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/editText_style"
+        android:layout_below="@+id/user"
+        android:hint="Senha"
+        android:inputType="numberPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button_style"
+        android:text="Entrar"
+        android:layout_below="@+id/password"/>
+
+</RelativeLayout>
