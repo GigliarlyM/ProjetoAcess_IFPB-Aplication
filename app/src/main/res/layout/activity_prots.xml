@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDDC39"
+    tools:context=".FinalActivity">
+
+    <RadioButton
+        android:id="@+id/radioButtonPROT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="206dp"
+        android:buttonTint="#100F0F"
+        android:checked="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/radioButtonPROT1"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="19sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPROT2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="264dp"
+        android:buttonTint="#100F0F"
+        android:checked="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/radioButtonPROT2"
+        android:textAllCaps="true"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="19sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPROT3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="322dp"
+        android:buttonTint="#100F0F"
+        android:checked="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/radioButtonPROT3"
+        android:textColor="#101010"
+        android:textSize="19sp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonPROT4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="301dp"
+        android:buttonTint="#100F0F"
+        android:checked="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/radioButtonPROT4"
+        android:textColor="@android:color/secondary_text_light"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="94dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Selecione o protótipo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

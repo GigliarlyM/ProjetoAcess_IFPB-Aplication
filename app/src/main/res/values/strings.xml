@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">Login_Interfase_Mobile</string>
+    <string name="app_name">SISA APP</string>
+    <string name="textViewfromsisa">from SISA</string>
+    <string name="radioButtonPROT1">LAB de INFO 1 - PROT 1</string>
+    <string name="radioButtonPROT2">LAB de INFO 2 - PROT 2</string>
+    <string name="radioButtonPROT3">LAB de INFO 3 - PROT 3</string>
+    <string name="radioButtonPROT4">LaISER - PROT 4</string>
+<!--    <string name="textViewIdentificacaoProt"></string>-->
+<!--    <string name="checkBoxAtividade"></string>-->
+<!--    <string name="plainTextTipoMovimentacao"></string>-->
+<!--    <string name="editTextDate"></string>-->
+<!--    <string name="editTextTime"></string>-->
+<!--    <string name="editTextTextAmbiente"></string>-->
+
 </resources>

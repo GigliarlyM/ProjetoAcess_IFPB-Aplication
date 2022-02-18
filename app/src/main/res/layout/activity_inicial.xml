@@ -4,16 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_style"
+    android:background="#CDDC39"
+    android:backgroundTint="#0DCDDC39"
     tools:context=".InicialActivity">
 
     <ImageView
+        android:layout_width="189dp"
+        android:layout_height="197dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="458dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:padding="5dp"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:id="@+id/textViewfromsisa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ifpb_vertical"
-        android:background="@color/white" />
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="sans-serif-light"
+        android:text="from SISA"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#CDDC39"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

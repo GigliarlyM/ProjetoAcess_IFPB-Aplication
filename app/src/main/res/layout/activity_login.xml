@@ -4,27 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_style"
-    tools:context=".LoginActivity">
+    android:background="#E2CBFF2E"
+    tools:context=".LoginActivity"
+    tools:visibility="visible">
 
     <View
         android:id="@+id/login_area"
         style="@style/containerView_style"
-        android:layout_height="280dp"/>
+        android:layout_height="280dp" />
 
     <TextView
         android:id="@+id/title"
         style="@style/text_style"
-        android:text="Login:"
+        android:layout_alignTop="@+id/login_area"
         android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/login_area"/>
+        android:fontFamily="sans-serif-light"
+        android:text="Login"
+        android:textColor="#626356"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user"
         style="@style/editText_style"
         android:layout_below="@+id/title"
         android:hint="Usuário"
-        android:inputType="textEmailAddress"/>
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/password"
@@ -35,7 +40,8 @@
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/button_style"
-        android:text="Entrar"
-        android:layout_below="@+id/password"/>
+        android:layout_below="@+id/password"
+        android:background="#8BC34A"
+        android:text="Entrar" />
 
 </RelativeLayout>
