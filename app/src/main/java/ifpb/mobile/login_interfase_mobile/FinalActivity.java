@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 
-public class FinalActivity extends AppCompatActivity implements View.OnClickListener{
+public class FinalActivity extends AppCompatActivity{
 
     private RadioButton radio1;
     private RadioButton radio2;
@@ -23,12 +23,13 @@ public class FinalActivity extends AppCompatActivity implements View.OnClickList
         radio1 = findViewById(R.id.radioButtonPROT1);
 
         intent = new Intent(this, InicialActivity.class);
+
+        radio1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
-    @Override
-    public void onClick(View view) {
-
-        startActivity(intent);
-
-    }
 }
