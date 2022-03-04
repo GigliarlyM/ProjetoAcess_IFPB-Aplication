@@ -19,29 +19,32 @@
         android:layout_alignTop="@+id/login_area"
         android:layout_centerHorizontal="true"
         android:fontFamily="sans-serif-light"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="#626356"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/user"
+        android:id="@+id/usuario"
         style="@style/editText_style"
         android:layout_below="@+id/title"
-        android:hint="Usuário"
-        android:inputType="textEmailAddress" />
+        android:hint="@string/usu_rio"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/senha"
         style="@style/editText_style"
-        android:layout_below="@+id/user"
-        android:hint="Senha"
-        android:inputType="numberPassword" />
+        android:layout_below="@+id/usuario"
+        android:hint="@string/senha"
+        android:inputType="numberPassword"
+        android:autofillHints="" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_confir"
         style="@style/button_style"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/senha"
         android:background="#8BC34A"
-        android:text="Entrar" />
+        android:text="@string/entrar" />
 
 </RelativeLayout>

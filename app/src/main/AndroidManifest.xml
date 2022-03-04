@@ -10,16 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Interfase_Mobile">
         <activity
-            android:name=".FinalActivity"
-            android:exported="false" />
-        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".InicialActivity"
+            android:name=".FinalActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".InicialActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
