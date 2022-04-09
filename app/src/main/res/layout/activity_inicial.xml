@@ -8,12 +8,12 @@
     android:backgroundTint="#0DCDDC39"
     tools:context=".InicialActivity">
 
-    <ImageView
-        android:layout_width="189dp"
-        android:layout_height="197dp"
-        android:layout_alignParentBottom="true"
+    <ImageButton
+        android:id="@+id/logo_ifpb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="458dp"
+        android:layout_centerVertical="true"
         android:background="@color/cardview_shadow_end_color"
         android:padding="5dp"
         android:src="@drawable/image" />
