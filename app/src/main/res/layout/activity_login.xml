@@ -28,6 +28,7 @@
         android:id="@+id/usuario"
         style="@style/editText_style"
         android:layout_below="@+id/title"
+        android:textColor="#000000"
         android:hint="@string/usu_rio"
         android:inputType="textEmailAddress"
         android:autofillHints="" />
@@ -36,6 +37,7 @@
         android:id="@+id/senha"
         style="@style/editText_style"
         android:layout_below="@+id/usuario"
+        android:textColor="#000000"
         android:hint="@string/senha"
         android:inputType="numberPassword"
         android:autofillHints="" />

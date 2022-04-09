@@ -1,7 +1,6 @@
 package ifpb.mobile.login_interfase_mobile;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,11 +8,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+
 import ifpb.mobile.login_interfase_mobile.seguranca.LoginUsuario;
 
 public class LoginActivity extends AppCompatActivity {
 
+    // Organizar os componentes
     ViewHolder mViewHolder = new ViewHolder();
+
+    LoginUsuario loginUsuario;
+
+    ArrayList<LoginUsuario> dadoUsuario;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         mViewHolder.senhaText = findViewById(R.id.senha);
         mViewHolder.btnConfir = findViewById(R.id.btn_confir);
         mViewHolder.intent = new Intent(this, FinalActivity.class);
+
+
+        dadoUsuario = new ArrayList<LoginUsuario>();
     }
 
-    private void loginUsuario(){
-        LoginUsuario loginUsuario = new LoginUsuario();
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-        loginUsuario.setUsuario(mViewHolder.usuario);
-        loginUsuario.setSenha(mViewHolder.senha);
+        mViewHolder.btnConfir.setOnClickListener(event -> iniciarTransferencia());
     }
 
     private class ViewHolder {
@@ -42,22 +51,27 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent;
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+    private void cadastrarDados(){
 
-        mViewHolder.btnConfir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        loginUsuario = new LoginUsuario();
+        loginUsuario.setUsuario(mViewHolder.usuario);
+        loginUsuario.setSenha(mViewHolder.senha);
 
-                // resgata os dados informados pelo o usuario
-                mViewHolder.usuario = String.valueOf(mViewHolder.usuarioText.getText());
-                mViewHolder.senha = String.valueOf(mViewHolder.senhaText.getText());
-
-                loginUsuario();
-                startActivity(mViewHolder.intent);
-            }
-        });
-
+        dadoUsuario.add(loginUsuario);
     }
+
+    public void iniciarTransferencia(){
+
+        // resgata os dados informados pelo o usuario
+        mViewHolder.usuario = String.valueOf(mViewHolder.usuarioText.getText());
+        mViewHolder.senha = String.valueOf(mViewHolder.senhaText.getText());
+
+        // Organizando os dados para serem passados para uma outra activity
+        cadastrarDados();
+
+        mViewHolder.intent.putExtra("dadoUsuario", dadoUsuario.get(0));
+
+        startActivity(mViewHolder.intent);
+    }
+
 }
