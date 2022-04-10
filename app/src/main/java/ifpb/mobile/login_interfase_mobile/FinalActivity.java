@@ -23,6 +23,7 @@ public class FinalActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prots);
+        getSupportActionBar().hide();
 
         loginUsuario = (LoginUsuario) getIntent().getSerializableExtra("dadoUsuario");
 

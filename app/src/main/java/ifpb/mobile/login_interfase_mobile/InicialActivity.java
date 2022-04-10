@@ -16,6 +16,7 @@ public class InicialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicial);
+        getSupportActionBar().hide();
 
         intent = new Intent(this, LoginActivity.class);
         imageButton = (ImageButton) findViewById(R.id.logo_ifpb);

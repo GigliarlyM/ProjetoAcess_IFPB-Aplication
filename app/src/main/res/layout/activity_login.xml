@@ -4,49 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2CBFF2E"
+    android:background="@drawable/background_style"
     tools:context=".LoginActivity"
     tools:visibility="visible">
 
-    <View
+    <LinearLayout
         android:id="@+id/login_area"
         style="@style/containerView_style"
-        android:layout_height="280dp" />
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        >
 
-    <TextView
-        android:id="@+id/title"
-        style="@style/text_style"
-        android:layout_alignTop="@+id/login_area"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/login"
-        android:textColor="#626356"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            style="@style/text_style"
+            android:text="@string/login"
+            android:textAlignment="center"
+            />
 
-    <EditText
-        android:id="@+id/usuario"
-        style="@style/editText_style"
-        android:layout_below="@+id/title"
-        android:textColor="#000000"
-        android:hint="@string/usu_rio"
-        android:inputType="textEmailAddress"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/usuario"
+            style="@style/editText_style"
+            android:textColor="#000000"
+            android:hint="@string/usu_rio"
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
 
-    <EditText
-        android:id="@+id/senha"
-        style="@style/editText_style"
-        android:layout_below="@+id/usuario"
-        android:textColor="#000000"
-        android:hint="@string/senha"
-        android:inputType="numberPassword"
-        android:autofillHints="" />
+        <EditText
+            android:id="@+id/senha"
+            style="@style/editText_style"
+            android:textColor="#000000"
+            android:hint="@string/senha"
+            android:inputType="numberPassword"
+            android:autofillHints="" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_confir"
-        style="@style/button_style"
-        android:layout_below="@+id/senha"
-        android:background="#8BC34A"
-        android:text="@string/entrar" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_confir"
+            style="@style/button_style"
+            android:background="@drawable/button_style"
+            android:text="@string/entrar" />
+
+    </LinearLayout>
 
 </RelativeLayout>
